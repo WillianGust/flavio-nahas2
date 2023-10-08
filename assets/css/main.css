@@ -78,10 +78,12 @@
 		appearance: none;
 	}
 	/* LOGO */
-	.logo{
+	.logo-img{
 		width: 200px;
 	}
-
+.logo h1{
+	top: -25px!important;
+}
 /* Basic */
 
 	@-ms-viewport {
@@ -2997,7 +2999,7 @@
 					}
 
 					#header nav > ul > li a:not(.button) {
-						color: #fff;
+						color: #0e6405;
 						display: inline-block;
 						text-decoration: none;
 						border: 0;
@@ -3166,13 +3168,13 @@
 
 	#banner {
 		background-attachment: scroll,fixed;
-		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		/* background-color: #666; */
+		/* background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left,center center;
 		background-repeat: repeat,no-repeat;
-		background-size: auto,cover;
+		background-size: auto,cover; */
 		color: #fff;
-		padding: 12em 0 20em 0;
+		padding: 8em 0 0 0;
 		text-align: center;
 	}
 
@@ -3512,6 +3514,12 @@
 			}
 
 			#navButton {
+				background: url("/assets/img/logo.png");
+				background-position: center;
+				background-size: 50px;
+				background-repeat: no-repeat;
+				background-position-y: center;
+				background-position-x: right;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -3554,9 +3562,9 @@
 					}
 
 					#navButton .toggle:before {
-						background: rgba(192, 192, 192, 0.75);
+						/* background: rgba(208, 32, 32, 0.75); */
 						border-radius: 6px;
-						color: #fff;
+						color: green;
 						content: '\f0c9';
 						display: block;
 						font-size: 16px;
@@ -3590,8 +3598,8 @@
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #2b2b2b;
-				color: #bbb;
+				background: #0e6405;
+				color: #ffffff;
 			}
 
 				#navPanel .link {
@@ -3742,7 +3750,7 @@
 		/* Banner */
 
 			#banner {
-				padding: 4em 0;
+				padding: 4em 0 0;
 			}
 
 				#banner h2 {
@@ -3789,6 +3797,9 @@
 					line-height: 2em;
 					margin-left: 0;
 					padding-left: 0;
+				}
+				.logo-img{
+					width: 10px;
 				}
 
 	}
@@ -3884,7 +3895,7 @@
 		/* Banner */
 
 			#banner {
-				padding: 5em 3em 4em 3em;
+				padding:4em 2em 0em 0em;
 			}
 
 		/* Main */
