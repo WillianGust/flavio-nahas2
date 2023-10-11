@@ -77,7 +77,16 @@
 		-ms-appearance: none;
 		appearance: none;
 	}
-	/* LOGO */
+	/* STYLE TECBOS LOGO */
+	.flex-box{
+		display: grid!important;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+		@media screen and (max-width: 280px) {
+			grid-template-columns: 1fr; 
+		}
+	}
+
 	.logo-img{
 		width: 200px;
 	}
@@ -2261,6 +2270,7 @@
 		box-shadow: 0 2px 0 0 #e5e5e5;
 		margin: 0 0 2em 0;
 		padding: 3em;
+		text-align: center;
 	}
 
 		.box > :last-child {
