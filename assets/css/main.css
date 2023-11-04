@@ -3084,24 +3084,27 @@ body.landing #page-wrapper {
 	border: 0;
 }
 
-#nav {
+/* #nav {
 	justify-content: center;
 	align-items: flex-end !important;
-}
+} */
 
 #header nav {
 	height: inherit;
 	line-height: inherit;
-	position: absolute;
+	/* position: absolute; */
 	right: 0.75em;
 	top: 0;
 	vertical-align: middle;
+	align-items: center!important;
+	justify-content: space-evenly;
 }
 
 #header nav>ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	display: contents;
 }
 
 #header nav>ul>li {
