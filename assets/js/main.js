@@ -82,3 +82,25 @@
 		}
 
 })(jQuery);
+// Função para exibir ou ocultar o botão dependendo da posição de rolagem
+function toggleScrollToTopButton() {
+  const btnScrollToTop = document.getElementById("btnScrollToTop");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btnScrollToTop.style.display = "block";
+  } else {
+    btnScrollToTop.style.display = "none";
+  }
+}
+
+// Função para rolar suavemente até o topo da página
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+// Event listener para exibir ou ocultar o botão quando a página é rolada
+window.onscroll = function() {
+  toggleScrollToTopButton();
+};

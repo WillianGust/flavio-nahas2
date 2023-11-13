@@ -4079,3 +4079,22 @@ body.landing #main {
 	}
 
 }
+
+#btnScrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #374859;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+#btnScrollToTop:hover {
+  background-color: #707070;
+}
