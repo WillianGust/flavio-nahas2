@@ -104,3 +104,15 @@ function scrollToTop() {
 window.onscroll = function() {
   toggleScrollToTopButton();
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+	var nav = document.getElementById("header");
+	var nav = document.getElementById("nav");
+
+	window.addEventListener("scroll", function() {
+		var shouldAddClass = window.scrollY > 0;
+
+		header.classList.toggle("scrolled", shouldAddClass);
+		nav.classList.toggle("scrolled", shouldAddClass);
+	});
+});

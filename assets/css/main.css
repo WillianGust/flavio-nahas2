@@ -177,7 +177,7 @@ textarea {
 
 .logo-img {
 	width: 200px;
-	margin-top: 50px!important;
+	margin-bottom: 8px;
 }
 
 .logo h1 {
@@ -3059,7 +3059,7 @@ body.landing #page-wrapper {
 
 #header {
 	cursor: default;
-	height: 3.25em;
+	height: 2.1em;
 	left: 0;
 	line-height: 3.25em;
 	position: fixed;
@@ -3091,13 +3091,14 @@ body.landing #page-wrapper {
 } */
 
 #header nav {
+	margin-top: 70px !important;
 	height: inherit;
 	line-height: inherit;
 	/* position: absolute; */
 	right: 0.75em;
 	top: 0;
 	vertical-align: middle;
-	align-items: center!important;
+	align-items: center !important;
 	justify-content: space-evenly;
 	align-content: center;
 }
@@ -3230,6 +3231,12 @@ body.landing #page-wrapper {
 #header.alt input[type="button"]:active,
 #header.alt .button:active {
 	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#header.scrolled,
+#nav.scrolled {
+	background-color: #50373739;
+	transition: background-color 0.1s step-start;
 }
 
 .dropotron {
@@ -4081,20 +4088,21 @@ body.landing #main {
 }
 
 #btnScrollToTop {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #374859;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  line-height: 40px;
-  cursor: pointer;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #374859;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
 }
+
 #btnScrollToTop:hover {
-  background-color: #707070;
+	background-color: #707070;
 }
