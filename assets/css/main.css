@@ -3235,7 +3235,7 @@ body.landing #page-wrapper {
 
 #header.scrolled,
 #nav.scrolled {
-	background-color: #50373739;
+	background-color: #fff;
 	transition: background-color 0.1s step-start;
 }
 
@@ -4095,7 +4095,7 @@ body.landing #main {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background-color: #374859;
+	background-color: #fff;
 	color: #fff;
 	font-size: 20px;
 	text-align: center;
@@ -4104,5 +4104,5 @@ body.landing #main {
 }
 
 #btnScrollToTop:hover {
-	background-color: #707070;
+	background-color: #fff;
 }
