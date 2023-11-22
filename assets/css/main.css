@@ -3058,10 +3058,11 @@ body.landing #page-wrapper {
 }
 
 #header {
+	background-color: white;
 	cursor: default;
-	height: 2.1em;
+	height: 4.1em;
 	left: 0;
-	line-height: 3.25em;
+	line-height: 7.25em;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -3233,7 +3234,7 @@ body.landing #page-wrapper {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-#header.scrolled,
+#header.alt.reveal.scrolled,
 #nav.scrolled {
 	background-color: #fff;
 	transition: background-color 0.1s step-start;

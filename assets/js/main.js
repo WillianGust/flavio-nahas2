@@ -106,7 +106,7 @@ window.onscroll = function() {
 };
 
 document.addEventListener("DOMContentLoaded", function() {
-	var nav = document.getElementById("header");
+	var header = document.getElementById("header");
 	var nav = document.getElementById("nav");
 
 	window.addEventListener("scroll", function() {
