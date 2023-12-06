@@ -4131,11 +4131,25 @@ body.landing #main {
 }
 
 #authorNames {
+	color: #0e6405;
   display: flex;
   justify-content: space-around; /* Distribui uniformemente os nomes dos autores */
+	flex-direction: column;
 }
 
 .testimonial.active {
   display: block;
+}
+.author-name {
+  cursor: pointer;
+  padding: 10px;
+  /* border: 2px solid #0e6405; */
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.author-name:hover {
+  background-color: #84C873;
+  color: #fff;
 }
 /* END TESTIMONIALS-CAROUSEL */
