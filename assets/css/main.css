@@ -4109,82 +4109,33 @@ body.landing #main {
 }
 
 /* START TESTIMONIALS-CAROUSEL */
-.testimonials{
-	width: 100%;
-	min-height: 100vh;
-	background-color: #fff;
-	display: flex;
+.testimonial-container {
+  width: 60%;
+  overflow: hidden;
+}
+
+.testimonial {
+  width: 100%;
+  display: none;
 	align-items: center;
-	justify-content: center;
 }
-.testimonial{
-	width: 90%;
-	max-width: 800px;
-	margin: auto;
+.author-image {
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 50%; */
+  margin-right: 20px; /* Adiciona um espaçamento à direita da imagem */
 }
-.testimonial-text{
-	background-color: #0062ff;
-	color: #fff;
-	width: 100%;
-	height: 350px;
-	border-radius: 2em;
-	position: relative;
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-}
-.user-text{
-	width: 80%;
-	text-align: center;
-	line-height: 30px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: block;
-}
-.user-text{
-	font-size: 30px;
-	margin-bottom: 50px;
-	margin-top: 20px;
-}
-.user-text span{
-	display: block;
-	font-size: 13px;
-	margin-top: 60px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-.testimonial-pic{
-	margin-top: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+#authorContainer {
+  display: flex;
+  align-items: center; /* Alinha os elementos verticalmente no container */
 }
 
-.user-pic{
-	width: 210px;
-	padding: 5px;
-	border-radius: 50%;
-	margin: 10px;
-	cursor: pointer;
-	transition: 0.5s;
+#authorNames {
+  display: flex;
+  justify-content: space-around; /* Distribui uniformemente os nomes dos autores */
 }
 
-.user-text .active-text{
-	display: block;
-	animation: moveup 0.9s linear forwards;
-}
-
-.user-pic .active-pic{
-	width: 100px;
-	border: 3px solid #0062ff;
-}
-
-@keyframes moveup{
-	0%{
-		margin-top: 25px;
-	}
-	100%{
-		margin-top: 0px;
-	}
+.testimonial.active {
+  display: block;
 }
 /* END TESTIMONIALS-CAROUSEL */

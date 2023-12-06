@@ -117,17 +117,38 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 });
 
-let userTexts = document.getElementsByClassName("user-text");
-let userPics = document.getElementsByClassName("user-pic");
 
-function showReview(){
-  for (userPic of userPics){
-    userPic.classList.remove("active-pic");
-  }
-  for(userText of userTexts){
-    userText.classList.remove("active-text");
-  }
-  let i = Array.from(userPics).indexOf(event.target);
-  userPics[i].classList.add("active-pic");
-  userTexts[i].classList.add("active-text");
-};
+document.addEventListener('DOMContentLoaded', function() {
+  // Iniciar o carrossel
+  showTestimonial(0);
+
+  // Adicionar nomes dos autores dinamicamente
+  var testimonials = document.querySelectorAll('.testimonial');
+  var authorNamesContainer = document.getElementById('authorNames');
+
+  testimonials.forEach(function(testimonial, index) {
+    var authorName = testimonial.querySelector('.author').innerText;
+    var authorNameElement = document.createElement('div');
+    authorNameElement.className = 'author-name';
+    authorNameElement.setAttribute('data-index', index);
+    authorNameElement.innerText = authorName;
+    authorNamesContainer.appendChild(authorNameElement);
+
+    // Adicionar evento de clique aos nomes dos depoimentos
+    authorNameElement.addEventListener('click', function() {
+      var authorIndex = parseInt(this.getAttribute('data-index'), 10);
+      showTestimonial(authorIndex);
+    });
+  });
+});
+
+// Função para mostrar um depoimento específico
+function showTestimonial(index) {
+  var testimonials = document.querySelectorAll('.testimonial');
+  testimonials.forEach(function(testimonial) {
+    testimonial.classList.remove('active');
+  });
+
+  testimonials[index].classList.add('active');
+}
+
