@@ -10,7 +10,10 @@
 /* Reset */
 
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
-
+.reverse {
+	display: flex!important;
+	flex-direction: row-reverse!important;
+}
 html,
 body,
 div,
@@ -2153,8 +2156,8 @@ header p {
 
 header h2+p {
 	font-size: 1.25em;
-	margin-top: -1em;
-	line-height: 1.5em;
+	/* margin-top: -1em; */
+	/* line-height: 1.5em; */
 }
 
 header h3+p {
@@ -3622,7 +3625,7 @@ body.landing #main {
 	}
 
 	/* Section/Article */
-
+	
 	header br {
 		display: none;
 	}
