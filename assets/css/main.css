@@ -2096,7 +2096,7 @@ code {
 
 .container {
 	margin: 0 auto;
-	max-width: calc(100% - 5em);
+	max-width: calc(100% - 0em);
 	width: 60em;
 }
 
